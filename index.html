@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PelisPro</title>
+
+    <link rel="apple-touch-icon" sizes="57x57" href="assets/png/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="assets/png/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="assets/png/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="assets/png/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="assets/png/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="assets/png/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="assets/png/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="assets/png/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/png/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192"  href="assets/png/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/png/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="assets/png/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/png/favicon-16x16.png">
+    <!--Manifest-->
+    <link rel="manifest" href="manifest.json">
+    
+    <meta name="msapplication-TileColor" content="#3e58ff">
+    <meta name="msapplication-TileImage" content="assets/png/ms-icon-144x144.png">
+    <meta name="theme-color" content="#7684fe">
+
+     <!--Fonts-->
+     <link href="https://api.fontshare.com/v2/css?f[]=general-sans@500,300,600,400,700&display=swap" rel="stylesheet">
+     <link href="https://api.fontshare.com/v2/css?f[]=switzer@600,800,900,700,400,300,500&display=swap" rel="stylesheet">
+ 
+     <!--Custom CSS-->
+     <link rel="stylesheet" href="css/style.css">
+ 
+
+</head>
+<body>
+
+
+     <div>
+        <a href="#" id="boton-regreso">
+            <img src="assets/flecha-correcta.png" alt="flecha-correcta">
+        </a>        
+    </div>
+
+    <!--SERVICE WORKER-->
+    <script>
+        if ("serviceWorker" in navigator) {
+            window.addEventListener("load", function () {
+                navigator.serviceWorker
+                    .register("sw.js")
+                    .then(res => console.log("service worker registered", res))
+                    .catch(err => console.log("service worker not registered", err));
+            });
+        }
+    </script>
+
+    <script src="index.js" type="module" ></script>
+</body>
+</html>

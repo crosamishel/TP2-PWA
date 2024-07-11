@@ -1,0 +1,45 @@
+{
+    "author": "Mishel Poma Crosa",
+    "name": "PelisPro — Tu sitio para ver películas online ",
+    "short_name": "Pelispro",
+    "description": "Disfruta de una amplia selección de películas en PelisPro. Encuentra tus favoritas y descubre nuevos éxitos del cine.",
+    "dir": "ltr",
+    "orientation": "any",
+    "scope": "./",
+    "start_url": "./",
+    "theme_color": "#7684fe",
+    "background_color": "#3e58ff",
+    "display": "standalone",
+    "icons": [
+        {
+            "src": "./assets/png/android-icon-36x36.png",
+            "sizes": "36x36",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/png/android-icon-48x48.png",
+            "sizes": "48x48",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/png/android-icon-72x72.png",
+            "sizes": "72x72",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/png/android-icon-96x96.png",
+            "sizes": "96x96",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/png/android-icon-144x144.png",
+            "sizes": "144x144",
+            "type": "image/png"
+        },
+        {
+            "src": "./assets/png/android-icon-192x192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        }
+    ]
+}
